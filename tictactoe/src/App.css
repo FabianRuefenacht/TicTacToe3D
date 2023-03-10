@@ -1,5 +1,11 @@
 .App {
+  position: absolute;
   text-align: center;
+  font-weight: 500;
+  width: 100%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .App-logo {
@@ -46,6 +52,18 @@
 .cell {
   width: 30px;
   height: 30px;
+  color: blue;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.cellX {
+  width: 30px;
+  height: 30px;
+  color: red;
   top: 0;
   left: 0;
   padding: 0;
@@ -55,7 +73,22 @@
 
 .layer {
   width: max-content;
-  margin: auto;
+  margin-inline: auto;
   border: 2px solid black;
   margin-bottom: 20px;
+  transition: 500ms ease-in-out;
+  transform: perspective(200px) rotateX(0deg);
+}
+
+.layer3D {
+  width: max-content;
+  margin-inline: auto;
+  border: 2px solid black;
+  margin-bottom: -20px;
+  transition: 500ms ease-in-out;
+  transform: perspective(200px) rotateX(45deg);
+}
+
+.restart {
+  margin-top: 20px;
 }

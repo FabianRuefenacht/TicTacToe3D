@@ -91,4 +91,26 @@
 
 .restart {
   margin-top: 20px;
+  border: 2px solid rgb(245, 75, 45);
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: large;
+  background-color: tomato;
+  color: white;
+}
+
+.perspectiveChange {
+  margin-top: 20px;
+  border: 2px solid rgb(52, 143, 227);
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: large;
+  background-color: rgb(100, 168, 231);
+  color: white;
+}
+
+.winner {
+  font-size: large;
 }

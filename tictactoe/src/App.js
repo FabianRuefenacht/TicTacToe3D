@@ -8,7 +8,7 @@ function App() {
   const [winner, setWinner] = useState(null);
   const [tie, setTie] = useState(false);
   const [show3D, setShow3D] = useState(false);
-  const Tiechecker = Array(0)
+  const Tiechecker = Array(0);
 
   /*What happens after Clicking a Tile*/
   function handleClick(i) {
@@ -193,7 +193,7 @@ function App() {
         Tiechecker.push(idx)
       }
     }
-    if (Tiechecker.length===0) {
+    if (Tiechecker.length === 0) {
       setTie(true);
       return;
     }
@@ -218,7 +218,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setShow3D(!show3D)}>{show3D === false ? "show 3D View" : "show 2D View"}</button>
+      <button onClick={() => setShow3D(!show3D)} className='perspectiveChange'>{show3D === false ? "show 3D View" : "show 2D View"}</button>
       {tie === true &&
         <div>It's a tie.</div>
       }
@@ -226,7 +226,7 @@ function App() {
         <div>Next move: {currentPlayer}</div>
       }
       {winner !== null && tie === false &&
-        <div>{currentPlayer} won!</div>}
+        <div className='winner'>{currentPlayer} won!</div>}
       <div className={show3D === false ? 'layer' : 'layer3D'}>
         <div className='row'>
           <div className={squares[0] === 'X' ? 'cellX' : 'cell'} onClick={() => handleClick(0)}>{squares[0]}</div>

@@ -331,7 +331,7 @@ function App() {
           <div className={squares[63] === 'X' ? 'cellX' : 'cell'} onClick={() => handleClick(63)}>{squares[63]}</div>
         </div>
       </div>
-      <button onClick={() => restart()} className='restart'>restart game</button>
+      <button onClick={() => restart()} className={show3D === false ? 'restart' : 'restart3D'}>restart game</button>
     </div>
   );
 }

@@ -8,6 +8,11 @@
   transform: translateY(-50%);
 }
 
+body {
+  background-color: #282c34;
+  color: aliceblue;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -50,14 +55,16 @@
 }
 
 .cell {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   color: blue;
   top: 0;
   left: 0;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+  background-color: lightgrey;
 }
 
 .cellX {
@@ -74,8 +81,8 @@
 .layer {
   width: max-content;
   margin-inline: auto;
-  border: 2px solid black;
-  margin-bottom: 20px;
+  border: 4px solid #282c34;
+  margin-bottom: 10px;
   transition: 500ms ease-in-out;
   transform: perspective(200px) rotateX(0deg);
 }
@@ -83,14 +90,24 @@
 .layer3D {
   width: max-content;
   margin-inline: auto;
-  border: 2px solid black;
   margin-bottom: -20px;
   transition: 500ms ease-in-out;
   transform: perspective(200px) rotateX(45deg);
 }
 
 .restart {
-  margin-top: 20px;
+  margin-top: 0px;
+  border: 2px solid rgb(245, 75, 45);
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: large;
+  background-color: tomato;
+  color: white;
+}
+
+.restart3D {
+  margin-top: 40px;
   border: 2px solid rgb(245, 75, 45);
   border-radius: 5px;
   width: 150px;

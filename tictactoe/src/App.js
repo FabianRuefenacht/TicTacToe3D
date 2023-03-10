@@ -15,7 +15,7 @@ function App() {
     if (squares[i] === '') {
       squares[i] = currentPlayer
     } else {
-      return
+      return;
     }
 
     checkWin(squares);

@@ -68,14 +68,16 @@ body {
 }
 
 .cellX {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   color: red;
   top: 0;
   left: 0;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+  background-color: lightgrey;
 }
 
 .layer {

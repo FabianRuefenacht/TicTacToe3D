@@ -1,4 +1,4 @@
 # TicTacToe3D
 
 Link:
-[fabianruefenacht.github.io/TicTacToe3D](fabianruefenacht.github.io/TicTacToe3D)
+<a href="https://fabianruefenacht.github.io/TicTacToe3D/">https://fabianruefenacht.github.io/TicTacToe3D/</a>
